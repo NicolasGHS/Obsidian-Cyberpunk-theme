@@ -1,0 +1,181 @@
+.theme-dark {
+    --background-primary: #13131E;
+    --background-secondary: #0f0f18;
+    --background-secondary-alt: #181824;
+    --text-normal: #4baaa8;
+    --text-a: #bea63a;
+    --font-family-editor: Avenir, Avenir Next, sans-serif;
+    --vim-cursor: #fcf601; 
+
+
+    --text-title-h1: #af3943;
+    --text-title-h2: #fcf601;
+    --text-title-h3: #0d9668;
+    --text-title-h4: #673fb1;
+    --text-title-h5: #b42478;
+}
+
+/*****************/
+/* BOLD & ITALIC */
+/*****************/
+
+
+/* Links */ 
+/*********/
+
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link,
+.cm-formatting-link,
+.cm-url {
+    color: var(--text-a) !important;
+    text-decoration: none;
+}
+
+/* Headings */
+/************/
+
+.cm-s-obsidian .cm-header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+.cm-header-1, .markdown-preview-view h1 {
+    color: var(--text-title-h1);
+    font-size: 26px;
+    line-height: 36px;
+    font-family: var(--font-family-editor);
+    text-shadow: 0 0 20px #ff5555;
+}
+
+.cm-header-2, .markdown-preview-view h2 {
+    color: var(--text-title-h2);
+    font-size: 23px;
+    line-height: 34px;
+    font-family: var(--font-family-editor);
+    text-shadow: 0 0 20px #fcf601; 
+}
+
+.cm-header-3, .markdown-preview-view h3 {
+    color: var(--text-title-h3);
+    line-height: 32px;
+    font-family: var(--font-family-editor);
+    text-shadow: 0 0 20px #0d9668; 
+}
+
+.cm-header-4, .markdown-preview-view h4 {
+    color: var(--text-title-h4);
+    line-height: 28px;
+    font-family: var(--font-family-editor);
+    text-shadow: 0 0 20px #673fb1;
+}
+
+.cm-header-5, .markdown-preview-view h5 {
+    color: var(--text-title-h5);
+    line-height: 27px;
+    font-family: var(--font-family-editor);
+    text-shadow: 0 0 20px #b42478;
+}
+
+/* Bold */
+strong,
+.cm-strong {
+    font-weight: 600;
+    color: var(--text-title-h1)
+}
+
+/************/
+/* List */ 
+/************/
+
+.cm-s-obsidian span.cm-formatting-list {
+    color: var(--text-title-h1) !important;
+}
+
+/*************/
+/* Checkbox */
+/*************/
+
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+    content: '✓';
+    position: absolute;
+    color: var(--text-title-h4);
+    font-size:1em;
+    line-height: 1.25em;
+    text-align: center;
+    text-shadow: 0 0 20 --text-normal;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+    top: 0.2em !important;
+    right: 4px;
+    box-sizing: 4px;
+    position: relative;
+}
+
+/*******/
+/*Line */
+/*******/
+
+.markdown-preview-view hr {
+    margin-block-start: 4em;
+    margin-block-end: 4em;
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--background-primary), var(--text-normal), var(--background-primary));
+}
+
+.markdown-preview-view hr::after {
+    content: 'ᛟ';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(0deg);
+    transform-origin: 50% 50%;
+    padding: 0.5rem;
+    color: var(--text-title-h1);
+    background-color: var(--background-primary);
+}
+
+/**********/
+/* Cursor */
+/**********/
+
+.CodeMirror-cursor {
+    background-color: var(--vim-cursor);
+    opacity: 60% !important;
+}
+
+
+/****************/
+/* Line numbers */
+/****************/
+.cm-gutterElement {
+    color: var(--text-a);
+}
+
+.side-dock {
+    border-right: 0 !important;
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover {
+    color: var(--text-normal);
+}
+
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    width: 1px !important; 
+    color: #0d9668;
+}
