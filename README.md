@@ -1,0 +1,1 @@
+# Cyberpunk theme for Obsidian
